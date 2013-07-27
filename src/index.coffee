@@ -38,7 +38,7 @@ module.exports = (connect) ->
     @
 
   # inheriting settings from `connect` / `express` session store
-  SessionManager.prototype.__proto__ = connect.session.Store.prototype;
+  SessionManager::__proto__ = connect.session.Store::
 
   # overwrite fns for session support
   SessionManager::get = (sid, fn) ->
