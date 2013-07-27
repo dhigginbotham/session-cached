@@ -1,0 +1,45 @@
+{
+  "name": "session-cached",
+  "version": "0.0.1",
+  "description": "mongodb session store for connect/express with simple garbage collection",
+  "main": "lib/index.js",
+  "keywords": [
+    "cache",
+    "mongodb",
+    "session",
+    "garbage collection",
+    "express",
+    "connect"
+  ],
+  "author": {
+    "name": "David Higginbotham",
+    "email": "davehigginbotham@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "latest",
+    "mongodb": ">=1.3.12",
+    "ms": "~0.6.1"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.12.0",
+    "uglify-js": "~2.3.6",
+    "stylus": "~0.34.1",
+    "expect.js": "~0.2.0",
+    "express": "latest",
+    "flour": "~0.5.5",
+    "request": "~2.25.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "mocha test/session.coffee -R spec -t 4000 --compilers coffee:coffee-script"
+  },
+  "bugs": "https://github.com/dhigginbotham/session-cached/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dhigginbotham/session-cached.git"
+  }
+}
