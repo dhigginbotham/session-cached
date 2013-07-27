@@ -6,7 +6,6 @@ server = require("http").createServer(app)
 # require our session manager
 SessionManager = require("../lib")(express)
 
-console.log new SessionManager()
 # require our testing tools
 expect = require "expect.js"
 request = require "request"

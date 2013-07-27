@@ -35,8 +35,6 @@ module.exports = (connect) ->
 
       return if db? then fn null, self else fn null, null
 
-    @
-
   # inheriting settings from `connect` / `express` session store
   SessionManager::__proto__ = connect.session.Store::
 
